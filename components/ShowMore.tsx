@@ -13,7 +13,7 @@ const ShowMore = ({ pageNumber, isNext }: ShowMoreProps) => {
 
     const newPathname = updateSearchParams("limit", `${newLimit}`);
 
-    router.push(newPathname);
+    router.push(newPathname, { scroll: false });
   };
   return (
     <div className="w-full flex-center gap-5 mt-10">
